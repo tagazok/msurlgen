@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- <h1 class="title">
+            URL Generator
+        </h1> -->
+        <div>
+            <h2 class="title">
+                PET ID
+            </h2>
+            <input type="text" id="petId" placeholder="PET ID" />
+        </div>
+        <div>
+            <h2 class="title">
+                URL
+            </h2>
+            <input type="text" id="url" placeholder="Enter URL to track" />
+        </div>
+
+
+        <!-- <button id="generateUrl">Generate URL</button> -->
+
+        <h2 class="title">
+            Generated URL
+        </h2>
+        <div id="generatedUrlBox">
+            <div id="generatedUrl">&nbsp;</div>
+            <div class="button-placeholder">
+                <button id="copyToClipBoard">Copy</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
