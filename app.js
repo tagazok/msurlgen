@@ -25,6 +25,9 @@ if (params.has('pet')) {
     petId = params.get('pet');
     petIdInputDOM.value = petId;
 }
+if (params.has('lock') && params.get('lock') === 'true') {
+    document.querySelector('#section-petId').style.display = "none";
+}
 
 console.log(`PetId: ${petId}`);
 
