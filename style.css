@@ -25,7 +25,8 @@ html, body {
     padding: 0;
     margin: 0;
     height: 100vh;
-    background-color: #273036;
+    background: #213440;
+    background-image: radial-gradient(circle at center, #213440 0%, #273036 100%);
     color: white;
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }

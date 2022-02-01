@@ -42,13 +42,13 @@ function getUrl() {
 }
 
 function generateURL() {
-    generatedUrl = "";
+    generatedUrl = "&nbsp;";
     try {
         generatedUrl = new URL(url);
         generatedUrl.searchParams.set('ocid', `AID${petId}`);
 
     } catch (error) {
-        generatedUrl = "";
+        generatedUrl = "&nbsp;";
     }
     generaterUrlDOM.innerHTML = generatedUrl;
 }
