@@ -2,7 +2,7 @@ let url = "&nbsp;";
 let petId = "";
 let generatedUrl = "";
 let advocate = "";
-let sourcechannel = "";
+let sourceChannel = "";
 
 // Get DOM elements
 const generatorUrlDOM = document.querySelector("#generatedUrl");
@@ -10,6 +10,7 @@ const petIdInputDOM = document.querySelector("#petId");
 const advocateInputDOM = document.querySelector("#advocate");
 const urlInputDOM = document.querySelector("#url");
 const copyToClipBoardDOM = document.querySelector("#copyToClipBoard")
+const sourceChannelInputDOM = document.querySelector("#sourcechannel");
 
 // Add event listeners on generate button
 copyToClipBoardDOM.addEventListener('click', async e => {
@@ -50,9 +51,6 @@ if (params.has('sourcechannel')) {
         document.querySelector('#section-sourcechannel').style.display = "none";
     }
 }
-utm_source
-
-
 
 
 function getPetId() {
@@ -66,7 +64,7 @@ function getadvocate() {
 }
 
 function getsourcechannel() {
-    sourcechannel = sourcechannelInputDOM.value;
+    sourceChannel = sourceChannelInputDOM.value;
     generateURL();
 }
 
@@ -89,7 +87,7 @@ function generateURL() {
         if(advocate !== "") {
             generatedUrl.searchParams.set('wt.mc_id', advocate);
         }
-        if(sourcechannel !== "") {
+        if(sourceChannel !== "") {
             generatedUrl.searchParams.set('utm_source', sourcechannel);
         }
 
@@ -97,7 +95,7 @@ function generateURL() {
         generatedUrl = "&nbsp;";
         console.log(`PetId: ${petId}`);
         console.log(`advocate: ${advocate}`);
-        console.log('sourcechannel: ${sourcechannel}');
+        console.log('sourcechannel: ${sourceChannel}');
     }
-    generaterUrlDOM.innerHTML = generatedUrl;
+    generatorUrlDOM.innerHTML = generatedUrl;
 }
