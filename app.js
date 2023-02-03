@@ -1,12 +1,13 @@
 let url = "&nbsp;";
 let petId = "";
 let generatedUrl = "";
-let devRel = "";
+let advocate = "";
+let sourcechannel = "";
 
 // Get DOM elements
-const generaterUrlDOM = document.querySelector("#generatedUrl");
+const generatorUrlDOM = document.querySelector("#generatedUrl");
 const petIdInputDOM = document.querySelector("#petId");
-const devRelInputDOM = document.querySelector("#devRel");
+const advocateInputDOM = document.querySelector("#advocate");
 const urlInputDOM = document.querySelector("#url");
 const copyToClipBoardDOM = document.querySelector("#copyToClipBoard")
 
@@ -20,7 +21,8 @@ copyToClipBoardDOM.addEventListener('click', async e => {
 });
 petIdInputDOM.addEventListener('keyup', getPetId);
 urlInputDOM.addEventListener('keyup', getUrl);
-devRelInputDOM.addEventListener('keyup', getDevRel);
+advocateInputDOM.addEventListener('keyup', getadvocate);
+sourceChannelInputDOM.addEventListener('keyup', getsourcechannel);
 
 // Pre-fill PET ID if present in URL
 const params = new URLSearchParams(window.location.search)
@@ -32,13 +34,23 @@ if (params.has('pet')) {
 
     }
 }
-if (params.has('devrel')) {
-    devRel = params.get('devrel');
-    devRelInputDOM.value = devRel;
+if (params.has('advocate')) {
+    advocate = params.get('advocate');
+    advocateInputDOM.value = advocate;
     if (params.has('lock') && params.get('lock') === 'true') {
-        document.querySelector('#section-devRel').style.display = "none";
+        document.querySelector('#section-advocate').style.display = "none";
     }
 }
+
+
+if (params.has('sourcechannel')) {
+    advocate = params.get('sourcechannel');
+    advocateInputDOM.value = advocate;
+    if (params.has('lock') && params.get('lock') === 'true') {
+        document.querySelector('#section-sourcechannel').style.display = "none";
+    }
+}
+utm_source
 
 
 
@@ -48,10 +60,16 @@ function getPetId() {
     generateURL();
 }
 
-function getDevRel() {
-    devRel = devRelInputDOM.value;
+function getadvocate() {
+    advocate = advocateInputDOM.value;
     generateURL();
 }
+
+function getsourcechannel() {
+    sourcechannel = sourcechannelInputDOM.value;
+    generateURL();
+}
+
 function getUrl() {
     url = urlInputDOM.value;
     generateURL();
@@ -59,22 +77,27 @@ function getUrl() {
 
 function generateURL() {
     generatedUrl = "&nbsp;";
-    devRel = `${devRel}`;
+    advocate = `${advocate}`;
     petId = `${petId}`;
+    sourcechannel = `${sourcechannel}`;
     try {
         generatedUrl = new URL(url);
         if( petId !=="")
         {
             generatedUrl.searchParams.set('ocid', `AID${petId}`);
         }
-        if(devRel !== "") {
-            generatedUrl.searchParams.set('wt.mc_id', devRel);
+        if(advocate !== "") {
+            generatedUrl.searchParams.set('wt.mc_id', advocate);
+        }
+        if(sourcechannel !== "") {
+            generatedUrl.searchParams.set('utm_source', sourcechannel);
         }
 
     } catch (error) {
         generatedUrl = "&nbsp;";
         console.log(`PetId: ${petId}`);
-        console.log(`DevRel: ${devRel}`);
+        console.log(`advocate: ${advocate}`);
+        console.log('sourcechannel: ${sourcechannel}');
     }
     generaterUrlDOM.innerHTML = generatedUrl;
 }
