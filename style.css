@@ -61,8 +61,14 @@ input:focus {
 }
 
 footer{
+    margin: 1em;
     text-align: center;
-    font-size: larger;
+}
+footer a{
+    display: block;
+    font-size: 1.2em;
+    text-decoration: none;
+    color:#f5f5f5;
 }
 
 #generatedUrl {
