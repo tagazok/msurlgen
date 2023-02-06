@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>URL Generator</title>
+    <title>🦝 Tracked Url Generator -Devrel MS 🦝</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400&display=swap"
@@ -15,33 +15,35 @@
 
 <body>
     <div class="container">
-        <!-- <h1 class="title">
-            URL Generator
-        </h1> -->
-        <!-- <div class="flex flex-direction-row logo">
-            <div>{</div>
-            <i class="fo-icon">&#xe800;</i>
-        <div>}</div>
-    </div> -->
-
-        <div id="section-petId">
-            <h2 class="title">
-                PET ID
-            </h2>
-            <input type="text" id="petId" placeholder="PET ID" />
-        </div>
+        <h1 class="title">
+            🦝 Tracked URL Generator 🦝
+        </h1>
         <div>
             <h2 class="title">
-                URL
+                URL TO TRACK
             </h2>
-            <input type="text" id="url" placeholder="Enter URL to track" />
+            <input type="text" id="url" placeholder="Enter URL with https: to track and add information" />
         </div>
-
-
-        <!-- <button id="generateUrl">Generate URL</button> -->
-
+        <div id="section-petId">
+            <h2 class="title">
+                PET ID ( Mandatory )
+            </h2>
+            <input type="text" inputmode="numeric" pattern="\d*" id="petId" placeholder="PetId" />
+        </div>
+        <div id="section-advocate">
+            <h2 class="title">
+                advocate code or co-devrel code ( extra params )
+            </h2>
+            <input type="text" id="advocate" placeholder="Advocate or co-devrel code" />
+        </div>
+        <div id="section-sourceChannel">
+            <h2 class="title">
+                Source channel ( extra params )
+            </h2>
+            <input type="text" id="sourceChannel" placeholder="Source channel" />
+        </div>
         <h2 class="title">
-            Generated URL
+            Generated URL with tracking params
         </h2>
         <div id="generatedUrlBox">
             <div id="generatedUrl">&nbsp;</div>
@@ -49,6 +51,7 @@
                 <button id="copyToClipBoard">Copy</button>
             </div>
         </div>
+        <footer><a href="https://github.com/olivMertens/Msurlgen" target="_blank" title="If you want some explanations">📖 Readme</a> - <a href="https://github.com/olivMertens/Msurlgen/issues" title="Ask me for a feature or issue!" target="_blank">☝️ Want a feature, having an issue? </a> - <a href="https://linktr.ee/msdevfr" target="_blank" title="linktree DevRelFR">🤙 Want to contact us ?</a></footer>
     </div>
     <script src="app.js"></script>
 </body>
