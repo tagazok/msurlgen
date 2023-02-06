@@ -30,4 +30,4 @@ I've added the advocate code and the source channel for tracking specific campai
 
 For the raccoon 🦝
 
-[Contact us on social media ](https://linktr.ee/devlrelfr) or by email [devrelfr@microsoft.com](devrelfr@microsoft.com) or discover our internal sharepoint page [aka.ms/devrelfr](aka.ms/devrelfr)
+[Contact us on social media ](https://linktr.ee/devlrelfr) or by email [devrelfr@microsoft.com](mailto:devrelfr@microsoft.com) or discover our internal sharepoint page [aka.ms/devrelfr](https://aka.ms/devrelfr)
