@@ -4,7 +4,6 @@ html, body {
     margin: 0;
     height: 100vh;
     background: #3A96DD;
-    background-image: radial-gradient(circle at center, #213440 0%, #273036 100%);
     color: white;
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
