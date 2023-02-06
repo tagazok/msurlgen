@@ -13,7 +13,11 @@ It will give the correct url to copy in the next step for [AKA](http://aka.ms/) 
 
 Auto generate the url with the pet ID and the advocate code
 
-Thanks to [tagazok](https://github.com/tagazok/msurlgen/commit/0d06160eaa1e1590bb5a34b7a598531936967a18) you can also have directly in the url request with params the pet ID it will automatically insert into the correct input
+Thanks to [tagazok](https://github.com/tagazok/msurlgen/commit/0d06160eaa1e1590bb5a34b7a598531936967a18) for the initial repository.
+
+you can also have directly in the url request with params the pet ID it will automatically insert into the correct input
+
+I've added the advocate code and the source channel for tracking specific campaign with a PetID / Advocate Code / Source channel
 
 > Example : https://olivmertens.github.io/Msurlgen/?pet=123456789 
 
