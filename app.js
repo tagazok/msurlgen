@@ -47,7 +47,7 @@ if (params.has('advocate')) {
 // Pre-fill SourceChannel if present in URL
 if (params.has('sourceChannel')) {
     advocate = params.get('sourceChannel');
-    advocateInputDOM.value = advocate;
+    advocateInputDOM.value = sourceChannel;
     if (params.has('lock') && params.get('lock') === 'true') {
         document.querySelector('#section-sourceChannel').style.display = "none";
     }
