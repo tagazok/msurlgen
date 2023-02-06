@@ -1,8 +1,9 @@
 # Msurlgen 
 MS Url Generator with tracking PetId / Advocate Code and UTM parameters for tracking specific campaign with a PetID / Advocate Code / Source channel
+
 ## Explanation
 
-you can access directly the website in github pages DNS [here - fork on my repository](https://olivmertens.github.io/Msurlgen/)
+you can access directly this website in github pages  [here - on my repository](https://olivmertens.github.io/Msurlgen/) or 💡 bookmark this [aka.ms/msurlgen](https://aka.ms/msurlgen)
 
 ## how to use
 
@@ -24,3 +25,9 @@ I've added the advocate code and the source channel for tracking specific campai
 > Example for advocate : https://olivmertens.github.io/Msurlgen/?advocate=123456789
 
 > Example for sourceChannel : https://olivmertens.github.io/Msurlgen/?sourceChannel=123456789
+
+## Thanks & Contact
+
+For the raccoon 🦝
+
+[Contact us on social media ](https://linktr.ee/devlrelfr) or by email [devrelfr@microsoft.com](devrelfr@microsoft.com) or discover our internal sharepoint page [aka.ms/devrelfr](aka.ms/devrelfr)
