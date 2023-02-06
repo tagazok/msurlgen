@@ -38,7 +38,7 @@ input {
     background-color: #f1f1f1;
 }
 
-input#url {
+input#url, input[type="text"] {
     width: 800px;
     max-width: 100%;
 }
